@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chào mừng bạn đến với thư viện"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="admin admin"
+        android:textSize="16sp"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/changePasswordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đổi mật khẩu"/>
+
+    <Button
+        android:id="@+id/changeUsernameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đổi tên hiển thị"/>
+
+    <Button
+        android:id="@+id/changeSecurityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sách bảo mật"/>
+
+    <Button
+        android:id="@+id/emailFeedbackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email góp ý"/>
+
+    <Button
+        android:id="@+id/aboutUsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Về chúng tôi"/>
+
+    <!-- Quản lý thư viện (Chỉ hiển thị cho admin) -->
+    <LinearLayout
+        android:id="@+id/libraryManagementLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/manageBooksButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản Lý Truyện"/>
+
+        <Button
+            android:id="@+id/manageCategoriesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản Lý Thể Loại Truyện"/>
+
+        <Button
+            android:id="@+id/manageUsersButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản Lý Người dùng"/>
+
+        <Button
+            android:id="@+id/manageCommentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản Lý Bình luận"/>
+
+        <Button
+            android:id="@+id/manageStatisticsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thống kê App"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất" />
+</LinearLayout>

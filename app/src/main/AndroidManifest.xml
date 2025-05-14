@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NovaIT"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.admin.StatisticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.AdminStatisticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.AdminManageCommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.AdminManageUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.ManageUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.client.EditNameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.client.StoriesByCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.EditCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.ManageCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.EditChapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.StoryDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.EditStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.ManageStoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.client.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.client.ChapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.client.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NovaIT" />
+        <activity
+            android:name=".activity.client.ReadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StoryDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.auth.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BottomNavActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.auth.SignInActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NovaIT" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

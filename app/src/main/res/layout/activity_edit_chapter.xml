@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity.admin.EditChapterActivity">
+
+    <!-- Tiêu đề của chapter -->
+    <EditText
+        android:id="@+id/chapterTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tiêu đề Chapter"
+        android:textSize="16sp" />
+
+    <!-- Nội dung của chapter -->
+    <EditText
+        android:id="@+id/chapterContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nội dung Chapter"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine" />
+
+    <!-- Nút lưu hoặc hủy -->
+    <Button
+        android:id="@+id/saveChapterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu Chapter" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hủy"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
